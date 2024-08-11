@@ -30,7 +30,7 @@ pyparsing==3.1.2
 pypiwin32==223
 python-dotenv==1.0.1
 pyttsx3==2.90
-# pywin32==306
+pywin32>=223
 requests==2.32.3
 rsa==4.9
 setuptools==72.1.0
