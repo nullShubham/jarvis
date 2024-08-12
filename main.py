@@ -12,7 +12,6 @@ tts_engine = pyttsx3.init()
 load_dotenv()
 
 Key=os.getenv("Key")
-print(Key)
 # speaking
 def speak(query):
     tts_engine.say(query)
@@ -34,10 +33,6 @@ def processQuery(query):
          search_url = f"https://www.google.com/search?q={q}"
          webbrowser.open(search_url)
          speak("Searching for"+query)
-    elif query == "open facebook":
-        webbrowser.open("https://facebook.com")
-    elif query == "open youtube":
-        webbrowser.open("https://youtube.com")
     elif "jarvis type" in query:
         speak("What Should I Type")
         voice = listen_for_command()
